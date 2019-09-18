@@ -6,7 +6,6 @@ pipeline {
                 sh 'echo "Hello World"'
                 sh '''
                     echo "Multiline shell steps works too"
-                    la -lah
                 '''
             }
             withAWS(region:'eu-west-1', credentials:'aws-static') {
